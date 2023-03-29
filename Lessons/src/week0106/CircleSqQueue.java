@@ -4,7 +4,7 @@ public class CircleSqQueue implements IQueue{
     private Object [] queueElem;
     private int front;
     private int rear;
-//branch dev
+//branch dev has merged
     @Override
     public void clear() {
 
