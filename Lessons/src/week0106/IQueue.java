@@ -2,7 +2,7 @@ package week0106;
 
 public interface IQueue {
     public void clear();
-    public void isEmpty();
+    public boolean isEmpty();
     public int length();
 
     public Object peek();

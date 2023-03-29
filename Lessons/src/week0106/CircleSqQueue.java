@@ -5,24 +5,32 @@ public class CircleSqQueue implements IQueue{
     private int front;
     private int rear;
 //branch dev has merged
+    public CircleSqQueue(int maxSize){
+        front = rear = 0 ;
+        queueElem = new Object[maxSize];
+    }
     @Override
     public void clear() {
+        front = rear = 0;
 
     }
 
     @Override
-    public void isEmpty() {
-
+    public boolean isEmpty() {
+        return front == rear;
     }
 
     @Override
     public int length() {
-        return 0;
+        return (rear - front + queueElem.length) % queueElem.length;
     }
 
     @Override
     public Object peek() {
-        return null;
+        if (front == rear )
+            return null;
+        else
+            return queueElem[front];
     }
 
     @Override
