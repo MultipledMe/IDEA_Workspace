@@ -42,4 +42,15 @@ public class CircleSqQueue implements IQueue{
     public Object poll() {
         return null;
     }
+
+    public void display(){
+        if (!isEmpty()){
+            for (int i = front; i != rear ; i = (i + 1) % queueElem.length) {
+                System.out.println(queueElem[i].toString() + " ");
+            }
+        }
+        else {
+            System.out.println("空队列");
+        }
+    }
 }
