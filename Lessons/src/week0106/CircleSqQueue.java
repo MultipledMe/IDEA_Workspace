@@ -35,12 +35,25 @@ public class CircleSqQueue implements IQueue{
 
     @Override
     public void offer(Object x) throws Exception {
+        if ((rear + 1) % queueElem.length == front)
+            throw new Exception("队列已满");
+        else{
+            queueElem[rear] = x;
+
+        rear = (rear + 1) % queueElem.length;
+        }
 
     }
 
     @Override
     public Object poll() {
-        return null;
+        if (front == rear)
+            return null;
+        else {
+            Object t = queueElem[front];
+            front = (front + 1) % queueElem.length;
+            return t;
+        }
     }
 
     public void display(){
