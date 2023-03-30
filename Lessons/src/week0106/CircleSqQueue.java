@@ -39,10 +39,8 @@ public class CircleSqQueue implements IQueue{
             throw new Exception("队列已满");
         else{
             queueElem[rear] = x;
-
-        rear = (rear + 1) % queueElem.length;
+            rear = (rear + 1) % queueElem.length;
         }
-
     }
 
     @Override
