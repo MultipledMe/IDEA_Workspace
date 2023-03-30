@@ -4,7 +4,7 @@ public class CircleSqQueue implements IQueue{
     private Object [] queueElem;
     private int front;
     private int rear;
-//branch dev has merged
+//branch dev has merged into something
     public CircleSqQueue(int maxSize){
         front = rear = 0 ;
         queueElem = new Object[maxSize];
