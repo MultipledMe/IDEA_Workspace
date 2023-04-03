@@ -1,5 +1,5 @@
 package week0106;
-
+//here to s
 public class CircleSqQueue implements IQueue{
     private Object [] queueElem;
     private int front;
