@@ -1,4 +1,4 @@
-﻿//字符串抽象数据类型的接口定义
+//字符串抽象数据类型的接口定义
 package week0107;
 
 public interface IString {
