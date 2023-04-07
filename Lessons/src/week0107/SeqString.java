@@ -1,4 +1,4 @@
-﻿// 顺序串类的实现。
+// 顺序串类的实现。
 package week0107;
 
 public class SeqString implements IString {
