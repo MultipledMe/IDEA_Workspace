@@ -1,5 +1,6 @@
 package Week0101.Subsquence_solution;
 //Time Complexity: O(n*log n)
+//分治法
 public class Divide_and_conquer {
     public static int max_num(int[]sequence,int left,int right) {
         if (left == right)

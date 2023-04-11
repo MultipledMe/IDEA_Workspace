@@ -4,7 +4,7 @@ Give a sequence consisted with{A1,A2,...,An}
 find one subsequence{Ai,...,Aj}
 Satisfy its sum is the maximum num of this sequence.
  */
-
+//穷举法
 //Time complexity: O(n^3)
 public class Enumeration {
     public static int max_sub(int []sequence){

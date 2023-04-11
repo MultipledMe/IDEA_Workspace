@@ -3,7 +3,7 @@ package week0107;
 
 import java.util.Random;
 
-public class BF_KMS{
+public class BF_KMP {
     public int indexBFCount(SeqString s, SeqString t, int begin){
         int slen,tlen,i = begin,j = 0;
         int count = 0;
@@ -90,7 +90,7 @@ public class BF_KMS{
         SeqString s2 = new SeqString(str_s2);
         SeqString t2 = new SeqString(str_t2);//也可以放进数组里，按索引取；亦可以根据java的泛型方法
 //实例化
-        BF_KMS p = new BF_KMS();
+        BF_KMP p = new BF_KMP();
         System.out.println("BF compare count for s1:" + p.indexBFCount(s1,t1,0));
         System.out.println("KMP compare count for s1:" + p.indexKMPCount(s1,t1,0));
         System.out.println("BF compare count for s2:" + p.indexBFCount(s2,t2,0));
