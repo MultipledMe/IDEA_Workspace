@@ -1,0 +1,60 @@
+@Generic paradigm
+ArrayList<[class.name]> al = new Arraylist<[class.name]>();
+al.add(new [class.name](......))
+ad.add....
+Iterator <[class.name]> itr = al.iterator();
+while(itr.hasNext()){
+    [class.name] [para**] = itr.next();
+   ......
+}
+
+HashSet<[class.name]> hs = new HashSet<[class.name]>();
+hs.add(new [class.name]...)
+hs.add...
+Iterator <[class.name]> itr= hs.iterator();
+while(itr.hasNext()){
+    [class.name] [para] = itr.next();
+}
+
+HashMap<[$WrapClass],[class.name]> hm= new HashMap<[$WrapClass],[class.name]>();
+hm.$put([$WrapClass item],new [class.name].....)
+hm.put...
+$$Set <[WrapClass]>[para] = hm.setKey();
+Iterator <[class.name> itr = [para].iterator();
+while(itr.hasNext()){
+    $[WrapClass item] k = itr.next();
+    [class.name] v = hm.get(k);
+    ....
+}
+
+
+Iterator<[class.name]> [name] = new Iterator<[class.name]>();
+
+@enum
+$Human-made ranks
+
+public enum [name]{
+    [PARA]({rules}),[PARA*]({rules}),....;
+    private ...
+    private ...
+    [name](rules){
+        this....
+        this....;
+    } // constructor
+}
+
+$For main_class:
+e.g.
+public class A{
+    public static void main(String[] args){
+        args1
+        args2
+        ......
+        [enum.name] [args]
+        A([args1],[args2].....[enum.name][args]){
+            this.args1 = args1;
+            ...
+            this.args = args;
+        }
+    }
+}
